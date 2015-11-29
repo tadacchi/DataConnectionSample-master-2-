@@ -27,7 +27,8 @@ public class MainActivity extends Activity {
                 rcvData = mClientConnection.getData();
             } else if (mHostConnection != null) {
 //                Log.d(TAG, "receive host message....");
-                rcvData = mHostConnection.getData();
+                rcvData = mHostConnection.getRecvData();
+
             }
             TextView textView = (TextView)findViewById(R.id.recvMsg);
             textView.setText(rcvData);

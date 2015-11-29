@@ -1,5 +1,7 @@
 package jp.co.altec.dataconnectionsample;
 
+import android.util.Log;
+
 /**
  * Created by tokue on 2015/09/13.
  */
@@ -20,6 +22,7 @@ public class SampleDevice {
     }
 
     public void setDeviceIpAddress(String remoteDeviceInfo) {
+        Log.d("IPアドレス:",remoteDeviceInfo);
         deviceIpAddress = remoteDeviceInfo;
     }
 
